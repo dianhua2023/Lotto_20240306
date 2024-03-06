@@ -2,6 +2,7 @@ package tw.edu.pu.csim.dianhua.lotto
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -11,5 +12,9 @@ class MainActivity : AppCompatActivity() {
 
         var t:TextView = findViewById(R.id.txv)
         t.text = "app"
+    }
+    fun happy(v: View){
+        var txv: TextView = findViewById(R.id.txv)
+        txv.text = (1..100).random().toString()
     }
 }
